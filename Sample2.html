@@ -5,15 +5,13 @@
         <script type="application/javascript" src="script/sampleScript.js"></script>
         <style type="text/css">
             body { padding: 2em; }
-            #container { width: 600px; height: 600px; border: 1px solid #000; position: relative; }
-            #center { width: 0px; height: 0px; position: absolute; left: 295px; top: 295px; background: #000; }
+            #container { width: 600px; height: 600px; position: relative; }
             .field { width: 20px; height: 20px; position: absolute; }
-            #crosshair-x { width: 600px; height: 0px; background: #000; position: absolute; left: 0; top: 300px; }
-            #crosshair-y { width: 0px; height: 600px; background: #000; position: absolute; left: 300px; top: 0; }
+            .redH2 { color: red; }
         </style>
     </head>
     <body>
-        Number of Targets : <input type="text" value="16" />
+        <h1>Click on the <span class="redH2">Target</span> : </h1>
         <div id="container">
         </div>
     </body>
