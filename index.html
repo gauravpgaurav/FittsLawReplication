@@ -1,18 +1,44 @@
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <script src="lib/jquery-3.2.1.min.js"></script>
-        <script type="application/javascript" src="script/targetScript.js"></script>
-        <style type="text/css">
-            body { padding: 2em; }
-            #container { width: 600px; height: 600px; position: relative; }
-            .target { width: 20px; height: 20px; position: absolute; }
-            .redH2 { color: red; }
-        </style>
-    </head>
-    <body>
-        <h1>Click on the <span class="redH2">Target</span> : </h1>
-        <div id="container" style="margin:2 auto;">
-        </div>
-    </body>
+   <head>
+      <meta charset="utf-8"/>
+      <script src="lib/jquery-3.2.1.min.js"></script>
+      <script src="lib/d3.min.js"></script>
+      <script type="application/javascript" src="script/targetScript.js"></script>
+      <style type="text/css">
+         body { padding: 2em; }
+         #container { width: 600px; height: 600px; position: relative; }
+         .target { width: 20px; height: 20px; position: absolute; }
+         .redH2 { color: red; }
+         .line {
+         stroke: #E4002B;
+         fill: none;
+         stroke-width: 3;
+         }
+         .axis path,
+         .axis line {
+         fill: none;
+         stroke: black;
+         shape-rendering: crispEdges;
+         }
+         .axis text {
+         font-size: 10px;
+         font-family: sans-serif;
+         }
+         .text-label {
+         font-size: 10px;
+         font-family: sans-serif;
+         }
+         .dot {
+         stroke: #293b47;
+         fill: #7A99AC
+         }
+      </style>
+   </head>
+   <body>
+      <h2 id="title">Click on the <span class="redH2">Target</span> : </h2>
+      <h4 id="placeholder">User 1 :</h4>
+      <div id="container" style="margin:2 auto;">
+      </div>
+   </body>
 </html>
+
